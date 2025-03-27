@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/netflixrouellet/static/css/main.f7dd95a4.css",
+    "main.js": "/netflixrouellet/static/js/main.65467b65.js",
+    "static/js/453.a7f51b9b.chunk.js": "/netflixrouellet/static/js/453.a7f51b9b.chunk.js",
+    "static/media/logo.svg": "/netflixrouellet/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/netflixrouellet/index.html",
+    "main.f7dd95a4.css.map": "/netflixrouellet/static/css/main.f7dd95a4.css.map",
+    "main.65467b65.js.map": "/netflixrouellet/static/js/main.65467b65.js.map",
+    "453.a7f51b9b.chunk.js.map": "/netflixrouellet/static/js/453.a7f51b9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7dd95a4.css",
+    "static/js/main.65467b65.js"
+  ]
+}
