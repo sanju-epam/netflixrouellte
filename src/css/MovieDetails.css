@@ -1,0 +1,48 @@
+
+.movie-details-container {
+    display: flex;
+    align-items: flex-start; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+  }
+  .movie-image-container {
+    flex: 1; 
+    margin-right: 20px;
+  }
+  
+  .movie-poster {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  .movie-info-container {
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .movie-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .movie-release-year,
+  .movie-rating,
+  .movie-duration,
+  .movie-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .movie-description {
+    line-height: 1.6; 
+  }

@@ -38,3 +38,156 @@
     transform: rotate(360deg);
   }
 }
+
+/* Parent container for the movie tile */
+.movie-tile {
+  display: flex;
+  flex-direction: column; /* Arrange image and details in a column */
+  align-items: center; /* Center image and text within the tile */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  max-width: 300px; /* Tile width */
+  min-height: 400px; /* Tile height */
+  background-color: white;
+  transition: 0.25s ease-in-out;
+}
+
+/* Move image to the top and make it take 90% of the width */
+.movie-image-top {
+  width: 90%; /* Take 90% of the tile width */
+  min-height: 360px; /* Height of the image */
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image doesn't distort */
+  margin-bottom: 15px; /* Add spacing below the image */
+}
+
+/* Movie details */
+.movie-details {
+  display: flex; /* Make it a flex container */
+  justify-content: space-between; /* Space between left column (info) and right column (year) */
+  align-items: center; /* Center-align content vertically */
+  width: 100%; /* Take full width of the tile */
+}
+
+/* Left column: Movie name and genres */
+.movie-info {
+  display: flex; /* Make info items in a row */
+  flex-direction: column; /* Stack name and genres vertically */
+  justify-content: flex-end; /* Center-align text vertically */
+  
+}
+
+/* Movie name */
+.movie-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Darker font color */
+}
+
+/* Movie genres */
+.movie-genres {
+  margin: 0;
+  font-size: 14px;
+  color: #555; /* Slightly lighter font color */
+}
+
+/* Right column: Release year */
+.movie-year {
+  flex: 1; /* Consume minimal width */
+  display: flex;
+  justify-content: flex-end; /* Align release year to the right */
+}
+
+.movie-release {
+  margin: 0;
+  font-size: 16px;
+  color: #777; /* Neutral gray font color */
+}
+
+/* Three dots menu button */
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Context menu container */
+.context-menu {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Menu item styling */
+.menu-item {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-item:hover {
+  background-color: #f2f2f2;
+}
+
+.context-menu {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.menu-item:hover {
+  background-color: #f2f2f2;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjusts spacing between items */
+}
+
+.movie-tile-wrapper {
+  width: 20%; /* Adjust this value based on desired number of tiles per row */
+  margin-bottom: 20px; /* Adds space between rows */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .movie-tile-wrapper {
+    width: 45%; /* Fewer tiles per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-tile-wrapper {
+    width: 100%; /* Single tile per row on very small screens */
+  }
+}
+
